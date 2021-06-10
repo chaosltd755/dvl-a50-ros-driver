@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <launch>
-    <node pkg="waterlinked-dvl" type="publisher.py" name="publisher">
-        <param name="ip" value="192.168.69.20"/>
+    <node pkg="waterlinked_a50_ros_driver" type="publisher.py" name="publisher">
+        <param name="ip" value="192.168.2.5"/>
         <param name="port" value="16171"/>
+    </node>
+    <node pkg="waterlinked_a50_ros_driver" type="subscriber_gui.py" name="subscriber">
     </node>
 </launch>
